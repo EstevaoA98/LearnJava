@@ -14,7 +14,7 @@ public class DadosNaoPrimitivos {
         String name = "Estevao Miranda";
         String nameUpperCase = name.toUpperCase();//toupperCase->Metodo que transforma o texto em maiusculo
         System.out.println("Nome em todo em CAPSLOCK: " + nameUpperCase);
-        System.out.println("Nome normal" + name);
+        System.out.println("Nome normal: " + name);
 
         String city = "Belo Horizonte";
         String cityLowerCase = city.toLowerCase();//toLowerCase->Metodo que transforma o texto em minusculo
