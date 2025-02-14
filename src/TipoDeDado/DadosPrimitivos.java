@@ -9,7 +9,7 @@ public class DadosPrimitivos {
         INTEGER->byte, short, int, long
         FLOAT->float, double
 
-        Objetivo da aula: Criar um um
+        Objetivo da aula: Criar um personagem.
         */
 
         int idade = 26;//valor maximo no int: 2 147 483 647
@@ -32,3 +32,5 @@ public class DadosPrimitivos {
          */
     }
 }
+/*Dados primitivos:
+São tipos de dados em que podese-se colocar metodos para fazer alterações na váriavel sem que seja mudado seu escopo*/
