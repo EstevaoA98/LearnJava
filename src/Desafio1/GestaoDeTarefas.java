@@ -7,23 +7,61 @@ public class GestaoDeTarefas {
 
         String prato1 = "Macarrão a bolonhesa";
         int tempoPreparo1 = 15;
-        String status1 = "rápido";
+        String status1 = "indefinido";
+        char tamanhoDaPorção1 = 'M';
+
+
+        if (tempoPreparo1 <= 15) {
+            status1 = "pronto";
+        } else if (tempoPreparo1 < 30) {
+            status1 = "em preparo";
+        } else{
+            status1 = "demorado";
+        }
+
+        System.out.println("Prato:" + prato1);
+        System.out.println("Tempo de preparo: " + tempoPreparo1 + " minutos" );
+        System.out.println("Status: " + status1);
+
+        System.out.println("------------------------------------------------------------------------------------");
 
         String prato2 = "Penne a carbonara";
         int tempoPreparo2 = 25;
-        String status2 = "médio";
+        String status2 = "indefinido";
+        char tamanhoDaPorção2 = 'P';
+
+        if (tempoPreparo2 <= 15) {
+            status2 = "pronto";
+        } else if (tempoPreparo2 < 30) {
+            status2 = "em preparo";
+        } else {
+            status2 = "demorado";
+        }
+
+        System.out.println("Prato:" + prato2);
+        System.out.println("Tempo de preparo: " + tempoPreparo2 + "minutos" );
+        System.out.println("Status: " + status2);
+
+        System.out.println("------------------------------------------------------------------------------------");
 
         String prato3 = "Lasanha";
         int tempoPreparo3 = 40;
-        String status3 = "demorado";
+        String status3 = "indefinido";
+        char tamanhoDaPorção3 = 'G';
 
-        String statusPrato1 = (tempoPreparo1 <= 15)? "pronto" : "em preparo";
-        String statusPrato2 = (tempoPreparo2 <= 25)? "pronto" : "em preparo";
-        String statusPrato3 = (tempoPreparo3 <= 30)? "pronto" : "em preparo";
+        if (tempoPreparo3 <= 15) {
+            status3 = "pronto";
+        } else if (tempoPreparo3 < 30) {
+            status3 = "em preparo";
+        } else {
+            status3 = "demorado";
 
-        System.out.println("Prato:" + prato1 + ", Tempo de preparo: " + tempoPreparo1 + " minutos" + ", Status: " + statusPrato1);
-        System.out.println("Prato:" + prato2 + ", Tempo de preparo: " + tempoPreparo2 + " minutos" + ", Status: " + statusPrato2);
-        System.out.println("Prato:" + prato3 + ", Tempo de preparo: " + tempoPreparo3 + " minutos" + ", Status: " + statusPrato3);
+        }
+
+        System.out.println("Prato:" + prato3);
+        System.out.println("Tempo de preparo: " + tempoPreparo3 + "minutos" );
+        System.out.println("Status: " + status3);
+
     }
 }
     /*Desafio: Gerenciamento de Pedidos
