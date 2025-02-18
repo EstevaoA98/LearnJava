@@ -3,7 +3,7 @@ package Arrays;
 public class RedeclararArray {
     public static void main(String[] args) {
         /*
-        * Gerenciamento de Memória → O Garbage Collector libera arrays sem referências.
+        * ma nova instância de um array ou string, fazendo com que a variável passe a apontar para um novo objeto na memória, descartando o anterior (caso não tenha mais referências, ele será coletado pelo Garbage Collector).
         * */
 
         String [] refrigerante = new String[5];

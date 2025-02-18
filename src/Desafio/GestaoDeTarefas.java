@@ -1,6 +1,4 @@
-package Desafio1;
-
-import com.sun.security.jgss.GSSUtil;
+package Desafio;
 
 public class GestaoDeTarefas {
     public static void main(String[] args) {
