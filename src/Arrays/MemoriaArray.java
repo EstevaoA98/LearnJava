@@ -28,7 +28,7 @@ public class MemoriaArray {
 
         // Quando acessa uma mémoria que nao armazena uma variável STRING, ele retorna null.
 
-        System.out.println(-------------------------------------------------------);
+
 
         // Array com int
         int[] numero = new int[2];
@@ -37,7 +37,7 @@ public class MemoriaArray {
         System.out.println("Numero: " + numero[1]);
         //Quando acessa uma memória que nao armazena uma variável INT, ele retorna 0.
 
-        System.out.println(-------------------------------------------------------);
+
 
         //Array com double
         double[] salario = new double[2];
@@ -46,7 +46,8 @@ public class MemoriaArray {
         System.out.println("Salario: " + salario[1]);
         //Quando acessa uma memória que nao armazena uma variável DOUBLE, ele retorna 0.
 
-        System.out.println(-------------------------------------------------------);
+
+
         //Array com boolean
         boolean[] verdadeiroOuFalso = new boolean[2];
         verdadeiroOuFalso[0] = true;
