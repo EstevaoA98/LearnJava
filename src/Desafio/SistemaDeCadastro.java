@@ -25,8 +25,10 @@ public class SistemaDeCadastro {
         Scanner scanner = new Scanner(System.in);
 
         //Define o tamanho da Array caso queira colocar mais clientes
-        int NUM_MAX = 10;
-        String [] CadastroCliente = new String [NUM_MAX];
+        int NUM_MAX = 3;
+        String[] CadastroCliente = new String [NUM_MAX];
+        String[] NumeroCliente = new String[NUM_MAX];
+        boolean[] menssagem = new boolean[NUM_MAX];
 
         //Contadores
         int ClientesCadastrado = 0;
@@ -49,6 +51,7 @@ public class SistemaDeCadastro {
             switch (opcao){
 
                 case 1:
+                    //Cadastra até o limite da array
                     if (ClientesCadastrado < NUM_MAX) {
                         System.out.println("Digite o nome do Cliente: ");
                         String NomeCliente = scanner.nextLine();
@@ -56,8 +59,17 @@ public class SistemaDeCadastro {
                         //Código armazena o nome de um cliente no array CadastroCliente, em uma posição específica definida pela variável ClientesCadastrado.
                         CadastroCliente[ClientesCadastrado] = NomeCliente;
 
-                        // somando +1 sempre que tiver um novo cadastro
-                        ClientesCadastrado ++;
+                        System.out.println("Digite o número de celular: ");
+                        NumeroCliente[ClientesCadastrado] = scanner.nextLine();
+
+                        System.out.println("Deseja receber avisos de oferta por mensagem?  \n1 - Sim\n2 - Não ");
+                        int opcaoMenssagem = scanner.nextInt();
+                        scanner.nextLine();
+
+                        // Usa um ternário mais compreensível com mensagens extraídas para variáveis
+                        menssagem[ClientesCadastrado] = (opcaoMenssagem == 1);
+
+                        ClientesCadastrado++;
                         System.out.println("Cadastro realizado com sucesso!");
                     }
                     else {
@@ -71,18 +83,26 @@ public class SistemaDeCadastro {
                         System.out.println("Nenhum cliente cadastrado.");
                     } else {
                         System.out.println("---------- Lista de Cliente Cadastrados ----------");
+
+                        //Percorre todo array listando todos nomes guardados, se nao houver vai aparecer null.
                         for (int i = 0; i < CadastroCliente.length ; i++) {
-                            System.out.println(CadastroCliente [i]);
+                            // Verifica se há um valor válido
+                            if (CadastroCliente[i] != null) {
+                            System.out.println("Cliente: " + CadastroCliente[i]);
+                            System.out.println("Telefone: " + NumeroCliente[i]);
+                            System.out.println("Cliente deseja receber ofertas: " + (menssagem[i] ? "Sim" : "Não"));
+                            System.out.println("-----------------------------------------------");
+                            }
                         }
                     }
                     break;
                 }
-
+                //Sai da lista
                 case 3:{
                     System.out.println("Saindo...");
                     break;
                 }
-
+                // Se o usuário nao digitar diferente das opções propostas
                 default:
                     System.out.println("Ésta opção é inválida.");
                 }
