@@ -96,7 +96,7 @@ public class SistemaDeCadastro {
                         }
                     }
                     break;
-                }
+                } 
                 //Sai da lista
                 case 3:{
                     System.out.println("Saindo...");
