@@ -1,4 +1,4 @@
-package Condições;
+package PrimeiroNivelJava.Condições;
 
 public class IF_ELSE {
     public static void main(String[] args) {

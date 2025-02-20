@@ -1,4 +1,4 @@
-package Desafio;
+package PrimeiroNivelJava.Desafio;
 
 public class GestaoDeTarefas {
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ public class GestaoDeTarefas {
 
     }
 }
-    /*Desafio: Gerenciamento de Pedidos
+    /*PimeiroNivel.PimeiroNivel.TipoDeDado.TipoDeDado.Desafio: Gerenciamento de Pedidos
     Crie um programa que represente três pedidos de um restaurante e suas respectivas informações.
 
     Cada pedido deve ter:

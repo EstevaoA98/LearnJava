@@ -1,6 +1,4 @@
-package Desafio;
-
-import com.sun.source.tree.WhileLoopTree;
+package PrimeiroNivelJava.Desafio;
 
 import java.util.Scanner;
 
@@ -15,7 +13,7 @@ public class SistemaDeCadastro {
         ✅ Gerenciar o fluxo do sistema por meio de um menu interativo.
 
         Tópicos utilizados:
-        🔹 Arrays → Para armazenar os nomes dos clientes.
+        🔹 PimeiroNivel.PimeiroNivel.TipoDeDado.TipoDeDado.Arrays → Para armazenar os nomes dos clientes.
         🔹 Switch Case → Para criar um menu interativo de opções.
         🔹 Loops → Para permitir a navegação no menu e percorrer os clientes cadastrados.
         🔹 Condicionais → Para validar cadastros e evitar ultrapassar o limite da lista.

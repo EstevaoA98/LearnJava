@@ -1,4 +1,4 @@
-package TipoDeDado;
+package PrimeiroNivelJava.TipoDeDado;
 
 public class DadosNaoPrimitivos {
     public static void main(String[] args) {

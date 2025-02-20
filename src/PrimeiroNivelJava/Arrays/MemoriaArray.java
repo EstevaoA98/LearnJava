@@ -1,4 +1,4 @@
-package Arrays;
+package PrimeiroNivelJava.Arrays;
 
 public class MemoriaArray {
     public static void main(String[] args) {
@@ -10,9 +10,9 @@ public class MemoriaArray {
          * Quando o array armazena objetos, ele guarda referências para os objetos na Heap, mas os próprios objetos ficam em locais separados na Heap.
          * Se um array não tiver mais referências apontando para ele, o Garbage Collector remove a memória alocada.
          *
-         * Arrays são armazenados na Heap, mas a referência fica na Stack.
+         * PimeiroNivel.PimeiroNivel.TipoDeDado.TipoDeDado.Arrays são armazenados na Heap, mas a referência fica na Stack.
          * A alocação é contínua e os elementos são acessados por índices.
-         * Arrays de objetos armazenam referências, e os objetos ficam em locais separados na Heap.
+         * PimeiroNivel.PimeiroNivel.TipoDeDado.TipoDeDado.Arrays de objetos armazenam referências, e os objetos ficam em locais separados na Heap.
          * O Garbage Collector gerencia a memória automaticamente.
          */
 

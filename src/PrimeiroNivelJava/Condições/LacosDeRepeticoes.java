@@ -1,4 +1,4 @@
-package Condições;
+package PrimeiroNivelJava.Condições;
 
 public class LacosDeRepeticoes {
     public static void main(String[] args) {

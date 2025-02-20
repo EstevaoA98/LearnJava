@@ -1,4 +1,4 @@
-package Arrays;
+package PrimeiroNivelJava.Arrays;
 
 public class RedeclararArray {
     public static void main(String[] args) {
