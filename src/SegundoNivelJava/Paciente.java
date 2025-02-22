@@ -7,6 +7,7 @@ public class Paciente {
     String endereco;
     String sintomas;
     int peso;
+    int desconto;
 
     //Metodo VOID não retorna valor.
 
@@ -21,12 +22,11 @@ public class Paciente {
     String consultado(){
         return "Consultado";
     }
-    //Metotodo INT retorna valor um inteiro.
+    //Metodo INT retorna valor um inteiro.
     int horarioAtendimento(){
         return 10;
     }
-    /*int valor = consultado(int valorApagar){
-        return valorApagar - 300;  //300 é o valor da consulta
-
-    }*/
+    public int PrecoConsulta(int valorApagar) {
+        return valorApagar - desconto;                     // Calcula o valor final da consulta
+    }
 }

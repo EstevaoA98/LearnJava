@@ -15,6 +15,7 @@ public class Main {
         Maria.endereco = "Rua dos Amendoins";
         Maria.sintomas = "Gripe e dor no corpo";
         Maria.peso = 60;
+        Maria.desconto = 40;
 
         System.out.println("Paciente: " + Maria.nome + "\n idade: " + Maria.idade + "\n Endereço: " + Maria.endereco + "\n Sintomas: " + Maria.sintomas + "\n Peso do paciente:");
 
@@ -25,6 +26,9 @@ public class Main {
         System.out.println(consultado);
         int horario = Maria.horarioAtendimento();
         System.out.println(horario + ":00");
+
+        int Apagar = Maria.PrecoConsulta(100);
+        System.out.println("Valor a pagar da consulta: " + Apagar);
 
 
         System.out.println("-----------------------------");
