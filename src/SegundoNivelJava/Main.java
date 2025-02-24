@@ -42,7 +42,7 @@ public class Main {
 
 
         System.out.println("Paciente: " + Jose.nome + "\n idade: " + Jose.idade + "\n Endereço: " + Jose.endereco + "\n Sintomas: " + Jose.sintomas + "\n Peso do paciente:");
-       Jose.particular();
+        Jose.particular();
         String atendido = Jose.consultado();
         System.out.println(atendido);
         int horas = Jose.horarioAtendimento();
