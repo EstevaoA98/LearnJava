@@ -1,6 +1,6 @@
 package SegundoNivelJava.Desafio;
 
-public class Funcionario {
+public class Funcionario{
 
     String nome;
     int idade;
