@@ -44,3 +44,7 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
         scanner.close();
     }
 }
+
+// Minhas dificuldades foram em relação a como criar um objeto do tipo Gerente e Funcionario e como acessar os métodos de cada um, pois não estava conseguindo acessar o método departamentoGerenciado() da classe Gerente, esta fazendo uma estrutura parecendo uma matriz sem chamar o método, mas depois de pesquisar um pouco consegui entender como fazer isso, e consegui fazer o código funcionar.
+
+//Mais para frente colocarei um menu para o usuário escolher se quer cadastrar um funcionário ou um gerente, e também colocarei um loop para que o usuário possa cadastrar quantos funcionários e gerentes quiser, e também colocarei um método para mostrar as informações de todos os funcionários e gerentes cadastrados.
