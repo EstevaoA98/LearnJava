@@ -7,16 +7,20 @@ public class Funcionario{
     String cargo;
     String setor;
     String statusAtividade;
-    int posicao;
+
 
 
 public void mostrarInformacoes() {
+
     System.out.println("Nome: " + nome);
     System.out.println("Idade: " + idade);
     System.out.println("Cargo: " + cargo);
     System.out.println("Setor: " + setor);
     System.out.println("Status de Atividade: " + statusAtividade);
-    System.out.println("Hierarquia: " + posicao);
+    System.out.println("------------------------------------------------");
+
+
+
 }
 }
 

@@ -27,31 +27,30 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
 
         System.out.println("Funcionário está ativo? (1 - sim / 2 - não)");
         int status = scanner.nextInt();
-        novoFuncionario.statusAtividade = (status==1) ? "Ativo" : "Não ativo";
+
+        if (status != 1 && status != 2) {
+            System.out.println("Opção inválida");
+            return;
+        }
+        novoFuncionario.statusAtividade = (status == 1) ? "Ativo" : "Não ativo";
         scanner.nextLine();
 
         System.out.println("Qual posição o funcionário ocupa? (1 - Gerente / 2 - Auxiliar)");
-        int  posicao = scanner.nextInt();
+        int posicao = scanner.nextInt();
         scanner.nextLine();
+        if (posicao != 1 && posicao != 2) {
+            System.out.println("Opção inválida");
+            return;
 
-        if (posicao == 1){
+        } else if (posicao == 1) {
             Gerente novoFuncionarioGerencia = new Gerente();
 
-            System.out.println("Qual departamento de gerência: ");
-            String departamentoGerenciado = scanner.nextLine();
-
-            novoFuncionarioGerencia.departamentoGerenciado = departamentoGerenciado;
-            departamentoGerenciado = String.valueOf(posicao);
+            novoFuncionarioGerencia.departamentoGerenciado();
 
         } else if (posicao == 2) {
+            Auxiliar novoFuncionarioAuxiliar = new Auxiliar();
 
-            Funcionario novoFuncionarioAuxiliar = new Funcionario();
-
-            System.out.println("Qual departamento de auxiliar: ");
-            String departamentoAuxiliar = scanner.nextLine();
-
-            novoFuncionarioAuxiliar.setor = departamentoAuxiliar;
-            departamentoAuxiliar = String.valueOf(posicao);
+            novoFuncionarioAuxiliar.departamentoAuxiliar();
         }
 
         novoFuncionario.mostrarInformacoes();
