@@ -10,37 +10,51 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
 
         Scanner scanner = new Scanner(System.in);
 
-        Funcionario Estevao = new Funcionario();
+        Funcionario novoFuncionario = new Funcionario();
 
         System.out.println("Digite o nome do funcionário: ");
-        Estevao.nome = scanner.nextLine();
+        novoFuncionario.nome = scanner.nextLine();
 
         System.out.println("Idade: ");
-        Estevao.idade = scanner.nextInt();
+        novoFuncionario.idade = scanner.nextInt();
         scanner.nextLine();
 
         System.out.println("Cargo: ");
-        Estevao.cargo = scanner.nextLine();
+        novoFuncionario.cargo = scanner.nextLine();
 
         System.out.println("Setor: ");
-        Estevao.setor = scanner.nextLine();
+        novoFuncionario.setor = scanner.nextLine();
 
         System.out.println("Funcionário está ativo? (1 - sim / 2 - não)");
         int status = scanner.nextInt();
-        Estevao.statusAtividade = (status==1) ? "Ativo" : "Não ativo";
+        novoFuncionario.statusAtividade = (status==1) ? "Ativo" : "Não ativo";
         scanner.nextLine();
 
+        System.out.println("Qual posição o funcionário ocupa? (1 - Gerente / 2 - Auxiliar)");
+        int  posicao = scanner.nextInt();
+        scanner.nextLine();
 
-        Gerente EstevaoGerencia = new Gerente();
+        if (posicao == 1){
+            Gerente novoFuncionarioGerencia = new Gerente();
 
-        System.out.println("Qual departamento de gerência: ");
-        String departamentoGerenciado = scanner.nextLine();
+            System.out.println("Qual departamento de gerência: ");
+            String departamentoGerenciado = scanner.nextLine();
 
-        EstevaoGerencia.departamentoGerenciado = departamentoGerenciado;
+            novoFuncionarioGerencia.departamentoGerenciado = departamentoGerenciado;
+            departamentoGerenciado = String.valueOf(posicao);
 
+        } else if (posicao == 2) {
 
-        EstevaoGerencia.departamentoGerenciado();
-        Estevao.mostrarInformacoes();
+            Funcionario novoFuncionarioAuxiliar = new Funcionario();
+
+            System.out.println("Qual departamento de auxiliar: ");
+            String departamentoAuxiliar = scanner.nextLine();
+
+            novoFuncionarioAuxiliar.setor = departamentoAuxiliar;
+            departamentoAuxiliar = String.valueOf(posicao);
+        }
+
+        novoFuncionario.mostrarInformacoes();
         scanner.close();
     }
 }

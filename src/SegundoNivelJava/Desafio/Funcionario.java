@@ -7,6 +7,7 @@ public class Funcionario{
     String cargo;
     String setor;
     String statusAtividade;
+    int posicao;
 
 
 public void mostrarInformacoes() {
@@ -15,6 +16,7 @@ public void mostrarInformacoes() {
     System.out.println("Cargo: " + cargo);
     System.out.println("Setor: " + setor);
     System.out.println("Status de Atividade: " + statusAtividade);
+    System.out.println("Hierarquia: " + posicao);
 }
 }
 
