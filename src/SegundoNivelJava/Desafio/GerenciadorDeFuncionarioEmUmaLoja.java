@@ -53,6 +53,9 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
             novoFuncionarioAuxiliar.departamentoAuxiliar();
         }
 
+        Pagamento  pagamentoFuncionario = new Pagamento();
+        pagamentoFuncionario.Pagamento();     //usando interface
+
         novoFuncionario.mostrarInformacoes();
         scanner.close();
     }
