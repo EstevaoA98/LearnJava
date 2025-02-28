@@ -20,4 +20,10 @@ public class Gerente extends Funcionario {
         departamentoGerenciado();
 
     }
+
+    @Override
+    public void ValeAlimentacao() {
+        System.out.println("Funcionário tem direito a vale alimentação de 1200,00 R$");
+    }
 }
+

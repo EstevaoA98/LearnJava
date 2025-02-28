@@ -46,11 +46,13 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
             Gerente novoFuncionarioGerencia = new Gerente();
 
             novoFuncionarioGerencia.departamentoGerenciado();
+            novoFuncionarioGerencia.ValeAlimentacao();
 
         } else if (posicao == 2) {
             Auxiliar novoFuncionarioAuxiliar = new Auxiliar();
 
             novoFuncionarioAuxiliar.departamentoAuxiliar();
+            novoFuncionario.ValeAlimentacao();
         }
 
         Pagamento  pagamentoFuncionario = new Pagamento();
