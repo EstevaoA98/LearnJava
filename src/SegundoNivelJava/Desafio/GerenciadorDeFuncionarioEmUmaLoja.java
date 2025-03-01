@@ -55,9 +55,50 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
             novoFuncionario.ValeAlimentacao();
         }
 
-        Pagamento  pagamentoFuncionario = new Pagamento();
-        pagamentoFuncionario.Pagamento();     //usando interface
+        System.out.println("=========Dados para pagamento do funcionário=========");
 
+        Pagamento pagFuncionario = new Pagamento();
+        System.out.println("Digite as informações de pagamento: ");
+
+        System.out.println("Salário: ");
+        pagFuncionario.Valorsalario = scanner.nextDouble();
+        scanner.nextLine();
+
+        System.out.println("Valor da passagem: ");
+        pagFuncionario.ValorPassagem = scanner.nextDouble();
+        scanner.nextLine();
+
+        System.out.println("Meta batida? (1 - sim / 2 - não)");
+        int meta = scanner.nextInt();
+        scanner.nextLine();
+        if (meta != 1 && meta != 2) {
+            System.out.println("Opção inválida");
+            return;
+        }else if (meta == 1) {
+            pagFuncionario.MetaBatida = true;
+
+            System.out.println("Comissão: ");
+            pagFuncionario.comissao = scanner.nextDouble();
+            scanner.nextLine();
+        } else {
+            pagFuncionario.MetaBatida = false;
+
+            System.out.println("não receberá comissão");
+        }
+
+        System.out.println("----------Pagamento do funcionário----------");
+        System.out.println("Salário: " + pagFuncionario.Valorsalario);
+        System.out.println("Passagem: " + pagFuncionario.ValorPassagem);
+        System.out.println("Meta Batida: " + pagFuncionario.MetaBatida);
+        System.out.println("Comissão: " + pagFuncionario.comissao);
+        System.out.println("Data de Pagamento: " + pagFuncionario.dataPagamento);
+
+        System.out.println("Valor total a receber no mês: " + (pagFuncionario.Valorsalario + pagFuncionario.ValorPassagem + pagFuncionario.comissao));
+
+        Pagamento  pagamentoFuncionario = new Pagamento();
+        pagamentoFuncionario.Pagamento();
+        System.out.println("-----------------------------------------------");
+        //usando interface
         novoFuncionario.mostrarInformacoes();
         scanner.close();
     }
