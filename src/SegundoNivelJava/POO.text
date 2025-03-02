@@ -94,3 +94,31 @@ Para controlar a visibilidade dos atributos e métodos, o Java utiliza **modific
 
 ---
 
+02/03/2025
+
+/*
+Hoje você focou mais na teoria desses conceitos, entendendo como cada um funciona e qual a importância deles na programação orientada a objetos. Se quiser praticar mais, tente criar suas próprias classes usando esses princípios.
+
+Resumo dos Conceitos:
+
+*Classes abstratas
+São classes que não podem ser instanciadas diretamente e servem como base para outras classes.
+Possuem métodos abstratos (sem implementação) que as subclasses precisam sobrescrever.
+
+*Interfaces
+Definem contratos que outras classes devem seguir.
+Todas as funções dentro de uma interface são abstratas por padrão.
+Uma classe pode implementar várias interfaces.
+
+*Polimorfismo
+Permite que um método se comporte de diferentes formas dependendo do objeto.
+Pode ser aplicado com sobrecarga de métodos ou sobrescrita de métodos.
+
+*Abstração
+Esconde detalhes internos e expõe apenas o necessário para o usuário.
+Pode ser feita com classes abstratas ou interfaces.
+
+*Aprendizado/Dificulades:
+Estudei até agora classes abstratas, interfaces, polimorfismo e abstração. Peguei mais a parte teórica pra entender melhor como tudo se conecta. Minha experiência foi tranquila em entender os conceitos, mas minha maior dificuldade foi visualizar quando realmente usar cada um na prática. Acho que agora preciso focar mais em exemplos reais e aplicar mais código pra fixar.
+
+*/
