@@ -1,5 +1,6 @@
 package SegundoNivelJava.Desafio;
 
-public interface FolhaDePagamento {
+public abstract interface FolhaDePagamento {
+
     void Pagamento();
 }
