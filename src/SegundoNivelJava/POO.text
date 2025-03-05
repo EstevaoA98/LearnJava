@@ -127,5 +127,11 @@ Estudei até agora classes abstratas, interfaces, polimorfismo e abstração. Pe
 *Um dos principais conceitos da POO, a herança multipla, permite que uma classe herde de vários tipos de classes, o que permite uma abstração mais completa e flexível.
 *Em Java, a herança multipla é implementada por meio de interfaces, que são contratos que definem métodos que uma classe deve implementar.
 *Interfaces podem ser implementadas por várias classes, permitindo que uma classe tenha múltiplos tipos.
+*/
 
+/*04/03/2025
+*overloading e overriding / sobrecarga e sobreescrita - > A sobrescrita (overriding) acontece quando uma classe filha cria um método com o mesmo nome e parâmetros da classe mãe, mas muda o que ele faz.
+*Já a sobrecarga (overloading) é quando criamos vários métodos com o mesmo nome, mas com quantidades ou tipos diferentes de parâmetros, a sobrescrita serve para modificar algo herdado, enquanto a sobrecarga facilita o uso do método de formas diferentes. Esses conceitos ajudam a tornar o código mais organizado e reutilizável.
+*Isso torna o código mais flexível e facilita a reutilização de métodos, permitindo que um mesmo nome de método atenda a diferentes situações, assim evita-se a criação de vários métodos com nomes diferentes para funções semelhantes, tornando o código mais organizado e legível.
+*
 */
