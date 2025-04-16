@@ -70,21 +70,23 @@ public class GerenciadorDeFuncionarioEmUmaLoja {
 
         System.out.println("Meta batida? (1 - sim / 2 - não)");
         int meta = scanner.nextInt();
-        scanner.nextLine();
+
         if (meta != 1 && meta != 2) {
             System.out.println("Opção inválida");
             return;
-        }else if (meta == 1) {
+        }
+
+        if (meta == 1) {
             pagFuncionario.MetaBatida = true;
 
-            System.out.println("Comissão: ");
+            System.out.print("Comissão: ");
             pagFuncionario.comissao = scanner.nextDouble();
             scanner.nextLine();
         } else {
             pagFuncionario.MetaBatida = false;
-
-            System.out.println("não receberá comissão");
+            System.out.println("Não receberá comissão.");
         }
+
 
         System.out.println("----------Pagamento do funcionário----------");
         System.out.println("Salário: " + pagFuncionario.Valorsalario);
