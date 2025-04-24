@@ -1,4 +1,4 @@
-package Atividades.Entidade;
+package CalculoTriangulo.Entidade;
 
 public class Triangulo {
     public double a;

@@ -1,6 +1,6 @@
-package Atividades.Triangulo;
+package CalculoTriangulo.Triangulo;
 
-import Atividades.Entidade.Triangulo;
+import CalculoTriangulo.Entidade.Triangulo;
 
 import java.util.Scanner;
 
