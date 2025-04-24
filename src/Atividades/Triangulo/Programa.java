@@ -1,7 +1,8 @@
-package Aplicacao;
+package Atividades.Triangulo;
+
+import Atividades.Entidade.Triangulo;
 
 import java.util.Scanner;
-import Entidade.Triangulo;
 
 public class Programa {
     public static void main(String[] args) {
@@ -21,16 +22,14 @@ public class Programa {
         y.b = leitor.nextDouble();
         y.c = leitor.nextDouble();
 
-        double px = (x.a + x.b + x.c) / 2.0;
-        double areaX= Math.sqrt(px * (px - x.a) * (px - x.b) * (px - x.c));
+        double areaX= x.area();
 
-        double py = (y.a + y.b + y.c)/2.0;
-        double areaY = Math.sqrt(py * (py - x.a) * (py - x.b) * (py - x.c));
+        double areaY = y.area();
 
         System.out.printf("Área X: %.4f%n", areaX);
-        System.out.printf("Perímetro X: %.4f%n", px);
+
         System.out.printf("Área Y: %.4f%n", areaY);
-        System.out.printf("Perímetro Y: %.4f%n", py);
+
 
         if (areaX > areaY) {
             System.out.println("Maior area: X");
