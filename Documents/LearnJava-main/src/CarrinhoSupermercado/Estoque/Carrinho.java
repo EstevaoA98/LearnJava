@@ -1,4 +1,4 @@
-package CarrinhoSupermercado.Carrinho;
+package CarrinhoSupermercado.Estoque;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class Carrinho {
         System.out.println("Digite a quantidade do produto: ");
         produto.quantidade = sc.nextInt();
 
-        System.out.println("---------- Informações do Produto ----------");
+        System.out.println("---------- Informações do produto no estoque ----------");
         System.out.println("Nome: " + produto.nome);
         System.out.println("Preço: " + produto.preco);
         System.out.println("Quantidade: " + produto.quantidade);
