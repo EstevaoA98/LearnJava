@@ -1,0 +1,137 @@
+Programação Orientada a Objetos (POO) em Java - Conceitos Teóricos
+
+A Programação Orientada a Objetos (POO) é um paradigma de programação que se baseia na estruturação de software através de objetos e suas interações. Em Java, a POO é amplamente utilizada para criar programas modulares, reutilizáveis e escaláveis.
+
+---
+
+##
+1. Conceitos Fundamentais da POO
+A POO em Java é estruturada em torno de quatro pilares principais:
+
+### 1.1 Classe
+- Uma classe é um modelo ou uma estrutura que define atributos (dados) e métodos (comportamentos) de um objeto.
+- Em termos simples, uma classe funciona como um molde para criar objetos.
+
+###
+1.2 Objeto
+- Um objeto é uma instância concreta de uma classe.
+- Ele possui estado (definido pelos atributos da classe) e comportamento (definido pelos métodos da classe).
+- Cada objeto é independente, mas pode interagir com outros objetos.
+
+###
+1.3 Atributos**
+- Representam as **características** de um objeto (também chamados de **variáveis de instância**).
+- Cada objeto pode ter valores diferentes para os mesmos atributos.
+
+###
+1.4 Métodos**
+- São funções dentro de uma classe que definem o **comportamento** dos objetos.
+- Métodos podem manipular os atributos e realizar ações específicas.
+
+---
+
+## **2. Os Quatro Pilares da POO**
+A POO se baseia em quatro princípios fundamentais:
+
+###
+2.1 Encapsulamento**
+- O **encapsulamento** restringe o acesso direto aos atributos de um objeto e força a interação por meio de métodos.
+- Isso promove a segurança e a integridade dos dados.
+- Utiliza **modificadores de acesso** (`private`, `public`, `protected`).
+
+###
+2.2 Herança**
+- A **herança** permite que uma classe (subclasse) herde atributos e métodos de outra classe (superclasse).
+- Isso promove a reutilização de código e facilita a manutenção.
+- A palavra-chave `extends` é usada para implementar herança em Java.
+
+###
+2.3 Polimorfismo**
+- O **polimorfismo** permite que um mesmo método tenha diferentes comportamentos.
+- Pode ocorrer de duas formas:
+  1. **Polimorfismo de Sobrecarga** (métodos com o mesmo nome, mas assinaturas diferentes dentro da mesma classe).
+  2. **Polimorfismo de Sobrescrita** (uma subclasse redefine um método da superclasse para modificar seu comportamento).
+
+###
+2.4 Abstração**
+- A **abstração** oculta os detalhes internos da implementação e expõe apenas o necessário para o funcionamento do objeto.
+- Pode ser implementada por meio de **classes abstratas** (`abstract`) ou **interfaces**.
+
+---
+
+##
+3. Modificadores de Acesso**
+Para controlar a visibilidade dos atributos e métodos, o Java utiliza **modificadores de acesso**:
+
+| Modificador  | Acesso na mesma classe | Acesso no mesmo pacote | Acesso em subclasses | Acesso global |
+|-------------|----------------------|--------------------|----------------|------------|
+| `private`   | ✅ Sim                | ❌ Não            | ❌ Não          | ❌ Não      |
+| (default)   | ✅ Sim                | ✅ Sim            | ❌ Não          | ❌ Não      |
+| `protected` | ✅ Sim                | ✅ Sim            | ✅ Sim          | ❌ Não      |
+| `public`    | ✅ Sim                | ✅ Sim            | ✅ Sim          | ✅ Sim      |
+
+---
+
+##
+4. Métodos Especiais**
+###
+4.1 Construtores**
+- São métodos especiais que são chamados automaticamente quando um objeto é criado.
+- Geralmente, são utilizados para inicializar atributos.
+
+###
+4.2 Métodos `static`**
+- Pertencem à classe, e não a uma instância específica.
+- Podem ser chamados sem a necessidade de criar um objeto.
+
+---
+
+##
+
+5. Interfaces e Classes Abstratas**
+-Classes Abstratas**: Não podem ser instanciadas diretamente e servem como base para outras classes.
+-Interfaces**: Definem um contrato que outras classes devem seguir, promovendo a abstração total.
+
+---
+
+02/03/2025
+
+/*
+Hoje você focou mais na teoria desses conceitos, entendendo como cada um funciona e qual a importância deles na programação orientada a objetos. Se quiser praticar mais, tente criar suas próprias classes usando esses princípios.
+
+Resumo dos Conceitos:
+
+*Classes abstratas
+São classes que não podem ser instanciadas diretamente e servem como base para outras classes.
+Possuem métodos abstratos (sem implementação) que as subclasses precisam sobrescrever.
+
+*Interfaces
+Definem contratos que outras classes devem seguir.
+Todas as funções dentro de uma interface são abstratas por padrão.
+Uma classe pode implementar várias interfaces.
+
+*Polimorfismo
+Permite que um método se comporte de diferentes formas dependendo do objeto.
+Pode ser aplicado com sobrecarga de métodos ou sobrescrita de métodos.
+
+*Abstração
+Esconde detalhes internos e expõe apenas o necessário para o usuário.
+Pode ser feita com classes abstratas ou interfaces.
+
+*Aprendizado/Dificulades:
+Estudei até agora classes abstratas, interfaces, polimorfismo e abstração. Peguei mais a parte teórica pra entender melhor como tudo se conecta. Minha experiência foi tranquila em entender os conceitos, mas minha maior dificuldade foi visualizar quando realmente usar cada um na prática. Acho que agora preciso focar mais em exemplos reais e aplicar mais código pra fixar.
+
+03/03/2025
+/*
+*Estudo de Herança multipla:
+*Um dos principais conceitos da POO, a herança multipla, permite que uma classe herde de vários tipos de classes, o que permite uma abstração mais completa e flexível.
+*Em Java, a herança multipla é implementada por meio de interfaces, que são contratos que definem métodos que uma classe deve implementar.
+*Interfaces podem ser implementadas por várias classes, permitindo que uma classe tenha múltiplos tipos.
+*/
+
+/*04/03/2025
+*overloading e overriding / sobrecarga e sobreescrita - > A sobrescrita (overriding) acontece quando uma classe filha cria um método com o mesmo nome e parâmetros da classe mãe, mas muda o que ele faz.
+*Já a sobrecarga (overloading) é quando criamos vários métodos com o mesmo nome, mas com quantidades ou tipos diferentes de parâmetros, a sobrescrita serve para modificar algo herdado, enquanto a sobrecarga facilita o uso do método de formas diferentes. Esses conceitos ajudam a tornar o código mais organizado e reutilizável.
+*Isso torna o código mais flexível e facilita a reutilização de métodos, permitindo que um mesmo nome de método atenda a diferentes situações, assim evita-se a criação de vários métodos com nomes diferentes para funções semelhantes, tornando o código mais organizado e legível.
+*
+*/

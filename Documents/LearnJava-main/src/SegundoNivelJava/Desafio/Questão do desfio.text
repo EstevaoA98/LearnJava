@@ -1,0 +1,32 @@
+
+    /*
+    *
+     Desafio: Gerenciamento de Funcionários em uma Loja
+     Crie um programa em Java para gerenciar informações dos funcionários de uma loja utilizando herança.
+     Desenvolva uma classe base chamada Funcionario e uma subclasse chamada Gerente.
+
+    Requisitos:
+    Na classe Funcionario, defina os atributos:
+
+    nome (String)
+    idade (int)
+    cargo (String)
+    setor (String)
+    statusAtividade (String)
+
+    Adicione um metodo chamado mostrarInformacoes(), que exibe todos esses atributos.
+
+    Crie uma subclasse chamada Gerente, que herda de Funcionario. Adicione um atributo adicional:
+
+    departamentoGerenciado (String)
+    E um método chamado mostrarDepartamento(), para exibir o departamento que o gerente supervisiona.
+
+    Sobrescreva o método mostrarInformacoes() na classe Gerente para incluir também o departamento gerenciado.
+
+    Quer um desafio extra?
+    Implemente um menu interativo utilizando a classe Scanner para permitir ao usuário escolher entre diferentes opções, como:
+
+    Exibir informações de todos os funcionários
+    Adicionar novos funcionários
+    Atualizar o cargo ou setor de um funcionário
+    * */
