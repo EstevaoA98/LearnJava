@@ -15,8 +15,8 @@ public class Aplicacao {
         System.out.println("Digite o valor do raio:");
         double raio = scanner.nextDouble();
 
-        double c = calc.circunferencia(raio);
-        double v = calc.volume(raio);
+        double c = Calculador.circunferencia(raio);
+        double v = Calculador.volume(raio);
 
         System.out.printf("Circunferência: %.2f%n", c);
         System.out.printf("Volume: %.2f%n", v);
